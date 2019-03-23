@@ -20,7 +20,7 @@ shape <- function(corners, trials = 100000){
     for (t in 1:trials){
         r <- sample(1:corners,1)
         x <- (x + points$x[r]) / sqrt(corners + 1)
-       y <- (y + points$y[r]) / sqrt(corners + 1)
+        y <- (y + points$y[r]) / sqrt(corners + 1)
         sierpinski$x[t] <- x
         sierpinski$y[t] <- y
     }
